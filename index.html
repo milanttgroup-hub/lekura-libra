@@ -1,0 +1,492 @@
+<!doctype html>
+<html lang="sr-Latn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lektura i korektura teksta od 1,99 € | Lektura Libra</title>
+<meta name="description" content="Profesionalna lektura i korektura teksta na srpskom, engleskom i još 30 jezika. Knjige, naučni radovi, poslovni i AI tekstovi. Besplatna probna lektura 2 strane.">
+<!-- PREGLED (GitHub Pages): noindex da Google ne indeksira probnu verziju. Pre objave na pravom domenu vratiti na: index, follow, max-image-preview:large i dodati canonical. -->
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1d3a32">
+<link rel="icon" href="img/logo.svg" type="image/svg+xml">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lektura Libra">
+<meta property="og:title" content="Lektura i korektura teksta | Lektura Libra">
+<meta property="og:description" content="Neka svaka napisana reč odiše pismenošću. Lektura i korektura na 30 jezika, besplatna probna lektura 2 strane.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" as="image" href="img/ana-portret-800.webp" imagesrcset="img/ana-portret-480.webp 480w, img/ana-portret-800.webp 800w" imagesizes="(max-width: 880px) 80vw, 440px" fetchpriority="high">
+<style>
+:root{--paper:#f7f2ea;--paper-2:#efe7da;--card:#fffdf9;--ink:#1b2622;--ink-2:#36423d;--muted:#5f6a64;--green:#1d3a32;--sage:#8a9a86;--red:#b13421;--red-soft:#f6ddd5;--line:#e2d8c8;--serif:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,"Times New Roman",serif;--sans:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;--max:1160px}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.7 var(--sans)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--green)}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.12;letter-spacing:-.01em;margin:0 0 .5em;text-wrap:balance}
+h2{font-size:clamp(2rem,4vw,2.9rem)}
+h3{font-size:1.3rem}
+p{margin:0 0 1em}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+.skip{position:absolute;left:-999px;top:8px;background:var(--red);color:#fff;padding:10px 16px;z-index:99;border-radius:8px}
+.skip:focus{left:8px}
+:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.kicker{display:flex;align-items:center;gap:12px;font:600 .8rem/1 var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--red);margin-bottom:18px}
+.kicker::before{content:"";width:28px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.5em;padding:.95em 1.6em;border-radius:999px;font:600 1rem/1 var(--sans);text-decoration:none;border:0;cursor:pointer;transition:transform .15s,background .15s}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:#a93422;transform:translateY(-2px)}
+.btn-line{color:var(--green);box-shadow:inset 0 0 0 1.5px var(--green)}
+.btn-line:hover{background:var(--green);color:var(--paper)}
+
+/* header */
+.top{position:sticky;top:0;z-index:40;background:rgba(247,242,234,.9);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.top .wrap{height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;color:var(--ink)}
+.brand svg{width:40px;height:40px;flex:none}
+.brand span{font:600 1.35rem/1 var(--serif);letter-spacing:-.01em}
+.brand em{color:var(--red)}
+.menu{display:flex;align-items:center;gap:2px}
+.menu a{color:var(--ink-2);text-decoration:none;font-size:.95rem;font-weight:500;padding:8px 12px;border-radius:8px}
+.menu a:hover{color:var(--red)}
+.menu .btn{margin-left:10px;padding:.7em 1.2em;font-size:.92rem;color:#fff}
+.menu .btn:hover{color:#fff}
+.mob{display:none}
+@media (max-width:980px){
+ .menu{display:none}
+ .mob{display:block}
+ .mob summary{list-style:none;cursor:pointer;font-weight:600;padding:8px 14px;border:1.5px solid var(--ink);border-radius:999px;font-size:.95rem}
+ .mob summary::-webkit-details-marker{display:none}
+ .mob nav{position:absolute;left:0;right:0;top:70px;background:var(--paper);border-bottom:1px solid var(--line);padding:6px 20px 22px;box-shadow:0 20px 30px -20px rgba(0,0,0,.25)}
+ .mob nav a{display:block;padding:12px 0;border-bottom:1px solid var(--line);color:var(--ink);text-decoration:none;font:600 1.15rem var(--serif)}
+ .mob nav .btn{display:flex;margin-top:16px;border:0;font:600 1rem var(--sans);color:#fff}
+}
+
+/* hero */
+.hero{padding:64px 0 96px;position:relative;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:.3em}
+.hero h1 i{font-style:italic;color:var(--red);font-weight:500}
+.lead{font-size:1.18rem;color:var(--ink-2);max-width:34em}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 40px}
+.facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:36px;padding-top:26px;border-top:1px solid var(--line)}
+.facts b{display:block;font:600 2.1rem/1 var(--serif);color:var(--green)}
+.facts span{font-size:.88rem;color:var(--muted)}
+.photo{position:relative;width:100%;max-width:440px;justify-self:end;margin:0}
+.photo .arch{border-radius:220px 220px 22px 22px;overflow:hidden;background:var(--paper-2);aspect-ratio:3/4;box-shadow:0 30px 60px -30px rgba(29,58,50,.45)}
+.photo .arch img{width:100%;height:100%;object-fit:cover;object-position:50% 12%}
+.photo::before{content:"";position:absolute;inset:-14px 14px 14px -14px;border:1.5px solid var(--sage);border-radius:230px 230px 26px 26px;z-index:-1}
+.proof{position:absolute;left:-64px;bottom:34px;width:300px;background:var(--card);border-radius:16px;padding:18px 20px;box-shadow:0 24px 50px -18px rgba(27,38,34,.4);font:1rem/1.75 var(--serif);color:var(--ink-2)}
+.proof small{display:block;font:600 .72rem/1 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+del{color:var(--muted);text-decoration-color:var(--red);text-decoration-thickness:2px}
+ins{text-decoration:none;color:#97281a;font-style:italic;background:var(--red-soft);border-radius:4px;padding:0 3px}
+.photo figcaption.sig{position:absolute;right:-6px;top:26px;background:var(--green);color:var(--paper);border-radius:999px;padding:8px 16px;font-size:.85rem;font-weight:600}
+@media (max-width:880px){
+ .hero{padding:40px 0 72px}
+ .hero .wrap{grid-template-columns:1fr;gap:56px}
+ .photo{justify-self:center;max-width:360px}
+ .proof{left:-12px;width:min(290px,88%)}
+ .facts{gap:22px}
+}
+
+/* sections */
+section{padding:100px 0}
+.alt{background:var(--card);border-block:1px solid var(--line)}
+.dark{background:var(--green);color:#e9efe9}
+.dark h2,.dark h3{color:#fff}
+.dark .kicker{color:#f2a08f}
+.head{max-width:700px;margin-bottom:52px}
+.head p{color:var(--muted)}
+.dark .head p{color:#c3d0c7}
+@media (max-width:880px){section{padding:72px 0}}
+
+/* about */
+.about{display:grid;grid-template-columns:.95fr 1.05fr;gap:64px;align-items:start}
+.about figure{margin:0;position:sticky;top:100px}
+.about figure img{border-radius:22px;aspect-ratio:16/10;object-fit:cover;width:100%}
+.about figure figcaption{font:italic 1.05rem/1.5 var(--serif);color:var(--muted);margin-top:14px;padding-left:16px;border-left:2px solid var(--red)}
+.about .intro{font:1.3rem/1.55 var(--serif);color:var(--ink)}
+.acc details{border-top:1px solid var(--line)}
+.acc details:last-child{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;padding:20px 48px 20px 0;position:relative;font:600 1.2rem/1.35 var(--serif)}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::before,.acc summary::after{content:"";position:absolute;right:8px;top:50%;width:16px;height:2px;background:var(--red);transition:transform .25s}
+.acc summary::after{transform:rotate(90deg)}
+.acc details[open] summary::after{transform:rotate(0)}
+.acc summary:hover{color:var(--red)}
+.acc .body{padding:0 0 22px;color:var(--ink-2)}
+.acc .body ul{margin:.3em 0 1em;padding-left:1.15em}
+.acc .body li{margin:.3em 0}
+.acc .cols{columns:2 260px;column-gap:28px;font-size:.93rem}
+.acc .cols li{break-inside:avoid}
+@media (max-width:880px){.about{grid-template-columns:1fr;gap:36px}.about figure{position:static}}
+
+/* differences */
+.diff{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.14);border-radius:22px;overflow:hidden}
+.diff article{background:var(--green);padding:32px 28px}
+.diff .no{font:italic 500 2.6rem/1 var(--serif);color:#f2a08f;display:block;margin-bottom:14px}
+.diff p{color:#c3d0c7;margin:0}
+
+/* prices */
+.prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:22px}
+.price{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:30px}
+.price h3{display:flex;justify-content:space-between;align-items:baseline;gap:10px}
+.price h3 small{font:600 .8rem var(--sans);color:var(--muted)}
+.price dl{margin:0}
+.price .row{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px dashed var(--line);font-size:.96rem}
+.price .row:last-child{border:0}
+.price dt{color:var(--ink-2)}
+.price dd{margin:0;font-weight:700;white-space:nowrap;color:var(--green)}
+.note{margin-top:24px;font-size:.92rem;color:var(--muted);max-width:820px}
+.note b{color:var(--ink)}
+
+/* faq */
+.faq{display:grid;grid-template-columns:.75fr 1.25fr;gap:64px;align-items:start}
+.faq .head{position:sticky;top:100px;margin:0}
+@media (max-width:880px){.faq{grid-template-columns:1fr;gap:24px}.faq .head{position:static}}
+
+/* references */
+.refs{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;list-style:none;padding:0;margin:0}
+.refs li{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px 22px;font:600 1.15rem/1.3 var(--serif);display:flex;align-items:center;gap:14px;min-height:96px}
+.refs li::before{content:"";width:10px;height:10px;border-radius:50%;background:var(--red);flex:none}
+
+/* reviews */
+.stars{color:#e3a521;letter-spacing:2px;font-size:1.05rem}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.reviews figure{margin:0;background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:28px;display:flex;flex-direction:column}
+.reviews blockquote{margin:12px 0 18px;font:1.08rem/1.6 var(--serif);color:var(--ink);flex:1}
+.reviews figcaption{font-weight:600;font-size:.93rem;display:flex;justify-content:space-between;gap:10px;color:var(--ink-2)}
+.reviews figcaption span{color:var(--muted);font-weight:500}
+.more{margin-top:30px;text-align:center}
+
+/* contact */
+.contact .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:start}
+.contact ul{list-style:none;padding:0;margin:28px 0 0}
+.contact li{padding:14px 0;border-bottom:1px solid rgba(255,255,255,.15)}
+.contact li small{display:block;color:#9fb1a6;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.contact li a{color:#fff;font:600 1.3rem var(--serif);text-decoration:none}
+form{background:var(--card);color:var(--ink);border-radius:24px;padding:34px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fld{display:grid;gap:6px}
+.full{grid-column:1/-1}
+label{font-size:.85rem;font-weight:600;color:var(--ink-2)}
+input,select,textarea{font:inherit;font-size:1rem;width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:0;border-color:var(--green);background:#fff}
+textarea{min-height:120px;resize:vertical}
+form .btn{grid-column:1/-1}
+form .hint{grid-column:1/-1;font-size:.85rem;color:var(--muted);margin:0}
+@media (max-width:880px){.contact .wrap{grid-template-columns:1fr;gap:40px}}
+@media (max-width:520px){form{grid-template-columns:1fr;padding:24px}}
+
+footer{padding:40px 0;font-size:.92rem;color:var(--muted)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;align-items:center}
+footer a{color:var(--ink-2)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"ProfessionalService","@id":"#lektura-libra","name":"Lektura Libra","description":"Lektura, korektura i redaktura tekstova na srpskom, engleskom i još 30 jezika.","telephone":"+381612145681","email":"libralektori@gmail.com","foundingDate":"2016","areaServed":"RS","address":{"@type":"PostalAddress","addressLocality":"Beograd","addressCountry":"RS"},"founder":{"@id":"#ana"},"priceRange":"1,99 € – 15 € po strani","image":"img/og.jpg","logo":"img/logo.svg",
+"hasOfferCatalog":{"@type":"OfferCatalog","name":"Lektura i korektura","itemListElement":[
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lektura i korektura na srpskom jeziku"},"priceSpecification":{"@type":"UnitPriceSpecification","minPrice":1.99,"maxPrice":7,"priceCurrency":"EUR","unitText":"prevodilačka strana (1.800 karaktera)"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lektura i korektura na engleskom jeziku"},"priceSpecification":{"@type":"UnitPriceSpecification","minPrice":4.99,"maxPrice":9,"priceCurrency":"EUR","unitText":"prevodilačka strana (1.800 karaktera)"}},
+{"@type":"Offer","itemOffered":{"@type":"Service","name":"Lektura na drugim stranim jezicima"},"priceSpecification":{"@type":"UnitPriceSpecification","minPrice":6,"maxPrice":15,"priceCurrency":"EUR","unitText":"prevodilačka strana (1.800 karaktera)"}}]}},
+{"@type":"Person","@id":"#ana","name":"Ana Todorović-Radetić","jobTitle":"Diplomirani filolog, lektor i prevodilac","alumniOf":"Filozofski fakultet u Nišu","image":"img/ana-portret-800.webp","worksFor":{"@id":"#lektura-libra"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Šta obuhvata lektura i korektura teksta?","acceptedAnswer":{"@type":"Answer","text":"Tehničku uređenost teksta, ispravljanje grešaka u kucanju, poštovanje pravopisne norme, primenu gramatičkih pravila, sintaksu, leksiku i stil – kako bi finalni tekst bio pregledan, jasan i jezički korektan."}},
+{"@type":"Question","name":"Koja je razlika između lekture i korekture?","acceptedAnswer":{"@type":"Answer","text":"Lektor se dubinski bavi pravopisom, gramatikom, stilom i smislom teksta, dok korektor nakon lekture i prelamanja uklanja preostale slovne i tehničke omaške. Najčešće se rade kao objedinjena usluga."}},
+{"@type":"Question","name":"Da li lektorišete tekstove na stranim jezicima?","acceptedAnswer":{"@type":"Answer","text":"Da, lekturu nudimo za tridesetak jezika, među kojima su engleski, nemački, francuski, italijanski, španski, ruski, bugarski i drugi. Po potrebi tekst najpre prevodimo, a zatim lektorišemo prevod."}},
+{"@type":"Question","name":"Kako se računa cena lekture?","acceptedAnswer":{"@type":"Answer","text":"Po prevodilačkoj strani od 1.800 karaktera sa razmacima. Za srpski cena je od 1,99 do 7 €, za engleski od 4,99 do 9 €, a za druge strane jezike od 6 do 15 € po strani."}},
+{"@type":"Question","name":"Kako mogu da vidim šta je izmenjeno u tekstu?","acceptedAnswer":{"@type":"Answer","text":"Lektorisani tekst dobijate u dve verzije: sa vidljivim izmenama (Track Changes u programu Word) i čistu verziju sa prihvaćenim izmenama, spremnu za objavljivanje."}},
+{"@type":"Question","name":"Koliko traje lektura?","acceptedAnswer":{"@type":"Answer","text":"Zavisi od obima i složenosti teksta. Kraći tekstovi često mogu biti lektorisani istog dana, a za obimnije materijale dogovaramo precizan rok koji se uvek poštuje."}},
+{"@type":"Question","name":"Da li postoji probna lektura?","acceptedAnswer":{"@type":"Answer","text":"Da. Nakon ponude možemo vam besplatno lektorisati dve strane vašeg teksta, pa tek onda odlučujete o saradnji."}}
+]}
+]}
+</script>
+</head>
+<body>
+<a class="skip" href="#sadrzaj">Pređi na sadržaj</a>
+
+<header class="top">
+ <div class="wrap">
+  <a class="brand" href="#">
+   <svg viewBox="0 0 48 48" aria-hidden="true"><rect width="48" height="48" rx="13" fill="#1d3a32"/><text x="11" y="35" font-family="Georgia,serif" font-size="31" font-style="italic" fill="#f6f1e7">L</text><path d="M28.5 37.5 33 29.5l4.5 8" fill="none" stroke="#e0533c" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/><circle cx="33" cy="13" r="2.3" fill="#e0533c"/></svg>
+   <span>Lektura <em>Libra</em></span>
+  </a>
+  <nav class="menu" aria-label="Glavni meni">
+   <a href="#o-nama">O nama</a>
+   <a href="#razlike">Zašto mi</a>
+   <a href="#cene">Cene</a>
+   <a href="#pitanja">Pitanja</a>
+   <a href="#reference">Reference</a>
+   <a href="#recenzije">Recenzije</a>
+   <a class="btn btn-red" href="#kontakt">Pošaljite tekst</a>
+  </nav>
+  <details class="mob"><summary>Meni</summary>
+   <nav aria-label="Mobilni meni">
+    <a href="#o-nama">O nama</a>
+    <a href="#razlike">Zašto mi</a>
+    <a href="#cene">Cene</a>
+    <a href="#pitanja">Pitanja i odgovori</a>
+    <a href="#reference">Reference</a>
+    <a href="#recenzije">Recenzije</a>
+    <a class="btn btn-red" href="#kontakt">Pošaljite tekst</a>
+   </nav>
+  </details>
+ </div>
+</header>
+
+<main id="sadrzaj">
+ <section class="hero">
+  <div class="wrap">
+   <div>
+    <p class="kicker">Lektura · Korektura · Redaktura</p>
+    <h1>Lektura i korektura teksta, <i>reč po reč</i></h1>
+    <p class="lead">Neka svaka napisana reč odiše pismenošću. Od romana i doktorske disertacije do ugovora, sajta ili AI teksta – filolozi sa položenim stručnim ispitima doteruju vaš tekst, a vaš stil ostaje vaš.</p>
+    <div class="actions">
+     <a class="btn btn-red" href="#kontakt">Besplatna probna lektura</a>
+     <a class="btn btn-line" href="#cene">Cene od 1,99 €</a>
+    </div>
+    <div class="facts">
+     <div><b>2016.</b><span>godina osnivanja</span></div>
+     <div><b>1000+</b><span>zadovoljnih klijenata</span></div>
+     <div><b>30</b><span>jezika</span></div>
+    </div>
+   </div>
+   <figure class="photo">
+    <div class="arch">
+     <img src="img/ana-portret-800.webp" srcset="img/ana-portret-480.webp 480w, img/ana-portret-800.webp 800w" sizes="(max-width: 880px) 80vw, 440px" width="800" height="1109" alt="Ana Todorović-Radetić, diplomirani filolog i lektorka" fetchpriority="high">
+    </div>
+    <figcaption class="sig">Ana Todorović-Radetić</figcaption>
+    <div class="proof" aria-label="Primer lekture jedne rečenice">
+     <small>Pre i posle lekture</small>
+     Nije mi bilo <del>najasnije</del> <ins>najjasnije</ins> šta <del>sam trebao</del> <ins>je trebalo</ins> da uradim, <del>obzirom,</del> <ins>s obzirom na to</ins> da mi ništa nije <del>objsnila</del> <ins>objasnila</ins>.
+    </div>
+   </figure>
+  </div>
+ </section>
+
+ <section class="alt" id="o-nama">
+  <div class="wrap about">
+   <figure>
+    <img src="img/ana-rad-1100.webp" srcset="img/ana-rad-640.webp 640w, img/ana-rad-1100.webp 1100w" sizes="(max-width: 880px) 92vw, 520px" width="1100" height="619" alt="Ana Todorović-Radetić tokom lektorisanja teksta" loading="lazy" decoding="async">
+    <figcaption>„Jedno čitanje nikada nije dovoljno da bi se moglo reći da je lektor posao obavio valjano.“</figcaption>
+   </figure>
+   <div>
+    <p class="kicker">O nama</p>
+    <h2>Filolozi i zaljubljenici u pisanu reč</h2>
+    <p class="intro">„Lektura Libra“ od 2016. godine okuplja diplomirane filologe sa bogatim iskustvom u lektorisanju i položenim stručnim ispitima. Vođeni željom da svaki tekst dovedemo do savršenstva, sarađivali smo sa više od hiljadu zadovoljnih klijenata.</p>
+    <p>Na čelu tima je Ana Todorović-Radetić – filolog, prevodilac, profesor engleskog jezika i autorka dve knjige. Dakle, vaš rukopis čita neko ko i sam piše.</p>
+    <div class="acc">
+     <details><summary>Ko je Ana Todorović-Radetić</summary><div class="body">
+      <p>Ana Todorović-Radetić je diplomirani filolog za engleski jezik i književnost; anglistiku je završila na Filozofskom fakultetu u Nišu. Ljubav prema engleskom jeziku i književnosti, uz odlično poznavanje ruskog i bugarskog, usmerila ju je ka prevodilaštvu i lekturi.</p>
+      <p>Od 2016. godine vodi prevodilačku agenciju „Prevodioci Libra“ u Beogradu, gde se bavi prevođenjem tekstova svih nivoa stručnosti i vodi brojne prevodilačke i lektorske projekte.</p>
+     </div></details>
+     <details><summary>Iskustvo u obrazovanju</summary><div class="body">
+      <p>Kao profesor engleskog jezika radila je u Građevinskoj tehničkoj školi na Zvezdari i školama stranih jezika „Moqui“ i „Memphis“ u Beogradu. Kurseve za odrasle držala je za Banku Intesa i kompaniju Ball Packaging Europe, kao i za Privrednu komoru Srbije, Direktorat za civilno vazduhoplovstvo, Centar za edukaciju privrednika i Ministarstvo zdravlja.</p>
+      <p>Mape uma, tehniku koju je popularizovao Toni Buzan, koristi u predavanju gramatike, a sa tim ciljem kreirala je i edukativni sajt grammarmindmaps.com.</p>
+     </div></details>
+     <details><summary>Književni i autorski rad</summary><div class="body">
+      <ul>
+       <li>Roman <b>„Cvetovi agave“</b> (Prometej, Novi Sad, 2022)</li>
+       <li>Zbirka pesama <b>„Kada sam bila ptica“</b> (Prometej, Novi Sad, 2024)</li>
+       <li>Pozorišni prikazi u rubrici „In Theatro“ sajta B92, brojne recenzije i kritike na srpskom i engleskom jeziku</li>
+       <li>Urednica bloga sajta prevodioci.co.rs i suvlasnica sajta samoobrazovanje.rs</li>
+      </ul>
+     </div></details>
+     <details><summary>Stručno usavršavanje</summary><div class="body">
+      <p>IELTS Academic (British Council, 2008), kao i veliki broj seminara iz struke i srodnih oblasti od 2006. godine do danas, među kojima su:</p>
+      <ul class="cols">
+       <li>„Kako predavati strani jezik“ (2006)</li>
+       <li>„Mape uma“, Finesa (2006)</li>
+       <li>„Elektronsko učenje CMS Moodle“ (2007)</li>
+       <li>Oxford University Press Day (2008–2018)</li>
+       <li>„Oxford Professional Development“ (2013)</li>
+       <li>„The English Book Day“ (2015)</li>
+       <li>„NLP Starter“, NLP institut (2016)</li>
+       <li>„Total Business Mastery“, Brajan Trejsi (2016)</li>
+       <li>BBEE Poslovni forum, M. Goldsmit i B. Trejsi (2017)</li>
+       <li>„Power Life Design“, NLP institut (2018, 2020)</li>
+       <li>„Biznis priče“ konferencija, Novi Sad (2024)</li>
+       <li>„Magnetic Charisma“, Vanessa Van Edwards (2024)</li>
+       <li>„Biznis i digital“, Pančevo (2025)</li>
+      </ul>
+     </div></details>
+     <details><summary>Kako radi naš tim</summary><div class="body">
+      <p>Svaki tekst poveravamo filologu za odgovarajući jezik, a stručne tekstove saradnicima koji najbolje poznaju datu oblast i njenu terminologiju. Sa klijentom smo u stalnom kontaktu, pa sve nedoumice rešavamo zajedno – pre nego što postanu greške.</p>
+     </div></details>
+    </div>
+   </div>
+  </div>
+ </section>
+
+ <section class="dark" id="razlike">
+  <div class="wrap">
+   <div class="head">
+    <p class="kicker">Po čemu se razlikujemo</p>
+    <h2>Lektura koja ne prepisuje vaš glas</h2>
+    <p>Ispravljamo greške, a ne autora. Evo šta dobijate kada nam poverite tekst.</p>
+   </div>
+   <div class="diff">
+    <article><span class="no">i.</span><h3>Lektura „u tri ruke“</h3><p>Prvo čitanje za korekturu i tehničko uređenje, drugo za pravopis i gramatiku, treće za stil i ritam – pa još jedna završna provera.</p></article>
+    <article><span class="no">ii.</span><h3>Dve verzije teksta</h3><p>Verzija sa vidljivim izmenama (Track Changes) da vidite svaku ispravku, i čista verzija spremna za štampu ili objavljivanje.</p></article>
+    <article><span class="no">iii.</span><h3>Besplatna probna lektura</h3><p>Pre nego što se odlučite, besplatno lektorišemo dve strane vašeg teksta. Uverite se u kvalitet, pa tek onda nastavljamo.</p></article>
+    <article><span class="no">iv.</span><h3>Lektor iz vaše oblasti</h3><p>Pravo, medicina, ekonomija, IT, građevina, umetnost – stručne tekstove dobijaju lektori koji poznaju terminologiju.</p></article>
+    <article><span class="no">v.</span><h3>Pisci čitaju pisce</h3><p>Kod književnih tekstova unapred dogovaramo nivo stilskih intervencija, kako bi tekst bio doteran, a vaš izraz ostao prepoznatljiv.</p></article>
+    <article><span class="no">vi.</span><h3>30 jezika, često isti dan</h3><p>Srpski, engleski i još tridesetak jezika. Kraći tekstovi često su gotovi istog dana, a dogovoreni rok se uvek poštuje.</p></article>
+    <article><span class="no">vii.</span><h3>Lektura AI tekstova</h3><p>Tekst nastao ili preveden uz pomoć veštačke inteligencije činimo prirodnim, jasnim i tačnim – uz proveru prevoda prema originalu.</p></article>
+    <article><span class="no">viii.</span><h3>Jasna cena, bez iznenađenja</h3><p>Cena po strani je poznata unapred, bez skrivenih troškova. Fizičkim i pravnim licima izdajemo račun.</p></article>
+   </div>
+  </div>
+ </section>
+
+ <section id="cene">
+  <div class="wrap">
+   <div class="head">
+    <p class="kicker">Cene</p>
+    <h2>Cene lekture po strani</h2>
+    <p>Cena se računa po prevodilačkoj strani od 1.800 karaktera sa razmacima. Pesma od 800 karaktera ima 0,44 strane, a roman od 200.000 karaktera nešto više od 111.</p>
+   </div>
+   <div class="prices">
+    <div class="price"><h3>Srpski jezik <small>po strani</small></h3><dl>
+     <div class="row"><dt>Biografije, brošure, motivaciona pisma, e-pošta</dt><dd>1,99–4 €</dd></div>
+     <div class="row"><dt>Ugovori, uputstva za upotrebu, apstrakti</dt><dd>3–5 €</dd></div>
+     <div class="row"><dt>Pravo, ekonomija, psihologija, sociologija</dt><dd>4–6 €</dd></div>
+     <div class="row"><dt>Mašinstvo, građevina, elektronika</dt><dd>4–7 €</dd></div>
+     <div class="row"><dt>Medicina, farmacija, stomatologija</dt><dd>4–7 €</dd></div>
+     <div class="row"><dt>Književna dela, beletristika, poezija</dt><dd>4–7 €</dd></div>
+    </dl></div>
+    <div class="price"><h3>Engleski jezik <small>po strani</small></h3><dl>
+     <div class="row"><dt>Biografije, brošure, motivaciona pisma, e-pošta</dt><dd>4,99–6 €</dd></div>
+     <div class="row"><dt>Ugovori, uputstva za upotrebu, apstrakti</dt><dd>5–7 €</dd></div>
+     <div class="row"><dt>Pravo, ekonomija, psihologija, sociologija</dt><dd>5–8 €</dd></div>
+     <div class="row"><dt>Mašinstvo, građevina, elektronika</dt><dd>5–9 €</dd></div>
+     <div class="row"><dt>Medicina, farmacija, stomatologija</dt><dd>6–9 €</dd></div>
+     <div class="row"><dt>Književna dela, beletristika, poezija</dt><dd>6–9 €</dd></div>
+    </dl></div>
+   </div>
+   <p class="note"><b>Ostali strani jezici</b> (nemački, španski, ruski, kineski i drugi): od 6 do 15 € po strani. Cene se obračunavaju u dinarima po srednjem kursu NBS na dan formiranja konačne cene. Nismo u sistemu PDV-a.</p>
+  </div>
+ </section>
+
+ <section class="alt" id="pitanja">
+  <div class="wrap faq">
+   <div class="head">
+    <p class="kicker">Pitanja i odgovori</p>
+    <h2>Sve što ste hteli da pitate lektora</h2>
+    <p>Niste našli odgovor? Pozovite nas ili pošaljite upit – odgovaramo brzo.</p>
+    <a class="btn btn-red" href="#kontakt">Postavite pitanje</a>
+   </div>
+   <div class="acc">
+    <details open><summary>Šta obuhvata lektura i korektura teksta?</summary><div class="body">
+     <p>Detaljan i sistematičan pregled materijala, sa ciljem da finalni tekst bude pregledan, jasan i jezički korektan:</p>
+     <ul>
+      <li><b>tehnička uređenost</b> – format stranica, margine, prored, font, naslovi i podnaslovi;</li>
+      <li><b>greške u kucanju</b> – slovne greške i nepotrebne beline;</li>
+      <li><b>pravopis</b> – interpunkcija, veliko i malo slovo, skraćenice, spojeno i odvojeno pisanje, transkripcija;</li>
+      <li><b>gramatika</b> – kongruencija (slaganje u licu, rodu, broju i padežu) i rekcija glagola;</li>
+      <li><b>sintaksa</b> – veznici, interpunkcija u složenim rečenicama, inverzija i jasnoća konstrukcija;</li>
+      <li><b>leksika i stil</b> – pleonazmi, ponavljanja, izrazi koji nisu u duhu jezika.</li>
+     </ul>
+    </div></details>
+    <details><summary>Koja je razlika između lekture i korekture?</summary><div class="body">
+     <p>Naziv lektura potiče od latinskog „legere“ – čitati. Lektor se dubinski bavi tekstom: pravopisom, gramatikom, stilom i smislom napisanog. Korektura (od „corrigere“ – ispraviti) je završno uređenje nakon lekture i prelamanja: uklanjanje preostalih slovnih grešaka, višestrukih razmaka, pogrešnog prenošenja reči u novi red i tehničkih propusta.</p>
+     <p>Danas se najčešće rade kao objedinjena usluga, jer se samo tako postiže potpuno spreman tekst.</p>
+    </div></details>
+    <details><summary>Da li lektorišete tekstove na stranim jezicima?</summary><div class="body"><p>Naravno. Lekturu nudimo za sve jezike na koje i sa kojih prevodimo – tridesetak njih, među kojima su engleski, nemački, francuski, italijanski, španski, portugalski, ruski, bugarski, makedonski, slovenački, češki, rumunski i arapski. Po potrebi tekst najpre prevodimo, a zatim lektorišemo i prevod.</p></div></details>
+    <details><summary>Da li lektorišete tekstove pisane na dijalektu?</summary><div class="body"><p>Da. Dijalekti nemaju standardizovana pravopisna pravila, pa lektor, pored uklanjanja omaški i uređivanja interpunkcije, uvodi doslednost u pisanju karakterističnih izraza. Kod ovakvih tekstova posebno nam je važna komunikacija sa autorom.</p></div></details>
+    <details><summary>Koje vrste tekstova lektorišete?</summary><div class="body"><p>Bez ograničenja: romane, priče, poeziju, drame, dnevnike i putopise; seminarske, diplomske i master radove, doktorske disertacije, članke i studije; brošure, uputstva, udžbenike i priručnike; blogove, sajtove, oglase, reklame i titlove. Lektorišemo i PowerPoint prezentacije i Excel tabele.</p></div></details>
+    <details><summary>Da li lektorišete stručne tekstove?</summary><div class="body"><p>Da – iz prava, ekonomije i marketinga, medicine i farmacije, računarstva, mašinstva i građevinarstva, ekologije, turizma, umetnosti, sporta i mnogih drugih oblasti. Stručne tekstove poveravamo lektorima specijalizovanim za datu oblast.</p></div></details>
+    <details><summary>Kako mogu da vidim šta je izmenjeno?</summary><div class="body"><p>Lekturu radimo u Wordu sa uključenom opcijom Track Changes, pa je svaka ispravka istaknuta i jasno označena. Dobijate dve verzije: sa vidljivim izmenama i „čistu“ verziju sa prihvaćenim izmenama, spremnu za dalju obradu ili objavljivanje.</p></div></details>
+    <details><summary>Da li će lektura promeniti moj stil?</summary><div class="body"><p>Ne. Lektor uklanja pleonazme i upadljiva ponavljanja, deli preduge rečenice i menja nejasne konstrukcije, ali ne „ide predaleko“ i ne narušava autentičan stil – što je posebno važno kod književnih tekstova. Ako vam je potrebna dublja obrada strukture i stila, to je <b>redaktura</b>, koju radimo uz konsultacije sa autorom.</p></div></details>
+    <details><summary>Da li je jedno čitanje dovoljno?</summary><div class="body"><p>Nikada. Prvo čitanje posvećeno je korekturi i tehničkom uređenju, drugo pravopisu i gramatici, a treće stilu. U svakom narednom čitanju hvatamo i ono što je eventualno promaklo, a na kraju još jednom pregledamo konačnu verziju sa prihvaćenim izmenama.</p></div></details>
+    <details><summary>Da li lektura uključuje pripremu za štampu?</summary><div class="body"><p>Lektor tehnički uređuje tekst (format, margine, prored, font, naslovi, poravnanje), pa je finalna verzija spremna za štampu. Za publikacije sa fotografijama i složenim prelomom sarađujemo sa grafičkim dizajnerima, a za tekstove namenjene sajtovima i sa SEO stručnjacima.</p></div></details>
+    <details><summary>Kako šaljem tekst i u kom formatu?</summary><div class="body"><p>Najjednostavnije je imejlom, na <a href="mailto:libralektori@gmail.com">libralektori@gmail.com</a>. Najčešće dobijamo Word dokumente, ali lektorišemo i PowerPoint prezentacije, Excel tabele i druge formate. Lektorisan tekst vraćamo imejlom u dogovorenom roku.</p></div></details>
+    <details><summary>Koliko traje lektura?</summary><div class="body"><p>Zavisi od obima, sadržaja, stručnosti i količine potrebnih intervencija. Kraći tekstovi često su gotovi istog dana, a za obimnije materijale dajemo preciznu procenu – i dogovoreni rok uvek poštujemo.</p></div></details>
+    <details><summary>Da li izdajete račun?</summary><div class="body"><p>Da. Pravnim licima i preduzetnicima izdajemo račun, a fizičkim licima fiskalni račun, koji možemo dostaviti i elektronski, zajedno sa lektorisanim tekstom.</p></div></details>
+   </div>
+  </div>
+ </section>
+
+ <section id="reference">
+  <div class="wrap">
+   <div class="head">
+    <p class="kicker">Reference</p>
+    <h2>Poverenje su nam ukazali</h2>
+    <p>Sarađivali smo sa nekoliko hiljada klijenata – od pojedinaca i istaknutih autora do vodećih kompanija, ustanova i institucija.</p>
+   </div>
+   <ul class="refs">
+    <li>Vlada Republike Srbije</li>
+    <li>Ministarstva Republike Srbije</li>
+    <li>Privredna komora Srbije</li>
+    <li>Fondacija Novak Đoković</li>
+    <li>Fakulteti Univerziteta u Beogradu</li>
+    <li>Muzeji, instituti i izdavačke kuće</li>
+    <li>Međunarodne organizacije</li>
+    <li>Farmaceutske, IT i građevinske kompanije</li>
+   </ul>
+  </div>
+ </section>
+
+ <section class="alt" id="recenzije">
+  <div class="wrap">
+   <div class="head">
+    <p class="kicker">Recenzije</p>
+    <h2>Šta kažu klijenti</h2>
+    <p>Izvodi iz recenzija koje su klijenti ostavili na Google-u.</p>
+   </div>
+   <div class="reviews">
+    <figure><div class="stars" aria-label="Ocena 5 od 5">★★★★★</div><blockquote>Sarađivali smo na lekturi moje knjige na srpskom i njenom prevodu na engleski, pa smatram da mogu relevantno da ostavim ocenu. Sve pohvale za posvećenost, uvažavanje mojih želja i poštovanje rokova – uz ljubaznu, profesionalnu komunikaciju i brzo odgovaranje na svaki zahtev. Sve to po razumnoj ceni.</blockquote><figcaption>Jovana Staničić <span>Google</span></figcaption></figure>
+    <figure><div class="stars" aria-label="Ocena 5 od 5">★★★★★</div><blockquote>Dugogodišnja uspešna i izuzetno prijatna saradnja, zahvaljujući visokom nivou profesionalizma! Brzi, efikasni i dosledni – HVALA NA SVEMU!</blockquote><figcaption>Valerija Farkaš <span>Google</span></figcaption></figure>
+    <figure><div class="stars" aria-label="Ocena 5 od 5">★★★★★</div><blockquote>Saradnja sa agencijom je protekla odlično – pružili su brzu i kvalitetnu uslugu, uz krajnje profesionalnu i ljubaznu saradnju. Iskrena pohvala i preporuka!</blockquote><figcaption>Luka Trailović <span>Google</span></figcaption></figure>
+    <figure><div class="stars" aria-label="Ocena 5 od 5">★★★★★</div><blockquote>Saradnja na profesionalnom nivou: brzi, tačni, odgovorni i ljubazni. Strpljivi sa klijentima, izlaze u susret svim našim prohtevima. Sve pohvale i preporuke za saradnju.</blockquote><figcaption>Marija Maric <span>Google</span></figcaption></figure>
+    <figure><div class="stars" aria-label="Ocena 5 od 5">★★★★★</div><blockquote>Veoma profesionalni i uslužni, spremni da udovolje individualnim potrebama klijenta da bi postigli optimalan rezultat.</blockquote><figcaption>Koja <span>Google</span></figcaption></figure>
+    <figure><div class="stars" aria-label="Ocena 5 od 5">★★★★★</div><blockquote>Sve pohvale, odlična komunikacija. Brzi i efikasni!</blockquote><figcaption>Tatjana Dejanovic <span>Google</span></figcaption></figure>
+   </div>
+   <p class="more"><a class="btn btn-line" href="https://www.google.com/maps/place/Prevodila%C4%8Dka+agencija+Libra+Beograd/@44.8093069,20.4831199,17z/data=!4m8!3m7!1s0x475a7b3a69e6692b:0x73474dab595844f6!8m2!3d44.8093069!4d20.4831199!9m1!1b1!16s%2Fg%2F11k4ls3tdd?hl=sr" rel="noopener">Sve recenzije na Google mapama</a></p>
+  </div>
+ </section>
+
+ <section class="dark contact" id="kontakt">
+  <div class="wrap">
+   <div>
+    <p class="kicker">Kontakt</p>
+    <h2>Pošaljite tekst, dobijte ponudu</h2>
+    <p>Recite nam kakav je tekst, koliko je obiman i do kada vam treba. Šaljemo cenu i rok, a na zahtev i dve strane besplatne probne lekture.</p>
+    <ul>
+     <li><small>Telefon</small><a href="tel:+381612145681">061/21-45-681</a></li>
+     <li><small>Imejl</small><a href="mailto:libralektori@gmail.com">libralektori@gmail.com</a></li>
+     <li><small>Sedište</small><a href="#recenzije">Beograd, rad potpuno online</a></li>
+    </ul>
+   </div>
+   <form action="mailto:libralektori@gmail.com" method="post" enctype="text/plain">
+    <div class="fld"><label for="ime">Ime i prezime</label><input id="ime" name="ime" autocomplete="name" required></div>
+    <div class="fld"><label for="email">Imejl</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+    <div class="fld"><label for="tel">Telefon</label><input id="tel" name="telefon" type="tel" autocomplete="tel"></div>
+    <div class="fld"><label for="vrsta">Vrsta teksta</label>
+     <select id="vrsta" name="vrsta">
+      <option>Knjiga / književni tekst</option>
+      <option>Naučni ili akademski rad</option>
+      <option>Stručni tekst</option>
+      <option>Poslovni tekst / ugovor</option>
+      <option>Sajt, blog, oglas</option>
+      <option>AI tekst ili prevod</option>
+      <option>Drugo</option>
+     </select></div>
+    <div class="fld"><label for="jezik">Jezik teksta</label><input id="jezik" name="jezik" placeholder="npr. srpski"></div>
+    <div class="fld"><label for="rok">Željeni rok</label><input id="rok" name="rok" placeholder="npr. za 3 dana"></div>
+    <div class="fld full"><label for="poruka">Poruka</label><textarea id="poruka" name="poruka" placeholder="Obim teksta (broj strana ili karaktera) i sve što treba da znamo"></textarea></div>
+    <p class="hint">Sam tekst nam pošaljite kao prilog na libralektori@gmail.com – procena je besplatna i ne obavezuje vas.</p>
+    <button class="btn btn-red" type="submit">Zatražite ponudu</button>
+   </form>
+  </div>
+ </section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <span>© 2026 Lektura Libra, Beograd</span>
+  <span>Deo prevodilačke agencije <a href="https://www.prevodioci.co.rs/" rel="noopener">Prevodioci Libra</a></span>
+ </div>
+</footer>
+</body>
+</html>
