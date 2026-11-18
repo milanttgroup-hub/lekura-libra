@@ -78,7 +78,7 @@ p{margin:0 0 1em}
 .pic .frame{border-radius:999px 999px 28px 28px;overflow:hidden;background:var(--pink);aspect-ratio:3/4.1;border:3px solid var(--navy);box-shadow:14px 14px 0 var(--pink)}
 .pic img{width:100%;height:100%;object-fit:cover;object-position:50% 10%}
 .sticker{position:absolute;left:-58px;top:46px;width:132px;height:132px}
-.sticker svg{width:100%;height:100%;animation:spin 18s linear infinite}
+.sticker svg{will-change:transform;width:100%;height:100%;animation:spin 18s linear infinite}
 .sticker b{position:absolute;inset:0;display:grid;place-items:center;font-size:2rem;color:var(--navy)}
 @keyframes spin{to{transform:rotate(360deg)}}
 .name{position:absolute;right:-10px;bottom:90px;background:var(--navy);color:#fff;padding:10px 16px;border-radius:14px;transform:rotate(-4deg);font-weight:700;font-size:.92rem;line-height:1.3}
@@ -92,7 +92,7 @@ p{margin:0 0 1em}
 
 /* marquee */
 .band{background:var(--navy);color:#fff;padding:96px 0 26px;overflow:hidden;position:relative}
-.band .track{display:flex;gap:48px;width:max-content;animation:slide 40s linear infinite;font-size:clamp(1.3rem,2.6vw,2rem);font-weight:700;letter-spacing:-.02em;white-space:nowrap}
+.band .track{will-change:transform;display:flex;gap:48px;width:max-content;animation:slide 40s linear infinite;font-size:clamp(1.3rem,2.6vw,2rem);font-weight:700;letter-spacing:-.02em;white-space:nowrap}
 .band .track span{display:inline-flex;gap:14px;align-items:center}
 .band del{color:#a8b0cc;text-decoration-color:var(--pink);text-decoration-thickness:3px}
 .band ins{text-decoration:none;color:var(--pink)}
