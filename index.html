@@ -73,7 +73,12 @@ p{margin:0 0 1em}
 .hero h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:.3em}
 .hero h1 i{font-style:italic;color:var(--red);font-weight:500}
 .lead{font-size:1.18rem;color:var(--ink-2);max-width:34em}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 40px}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 22px}
+.phone{display:inline-flex;align-items:center;gap:12px;margin:0 0 34px;text-decoration:none;color:var(--ink);font:600 1.35rem/1.1 var(--serif)}
+.phone small{display:block;font:600 .75rem/1.4 var(--sans);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.phone .ic{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--green);color:#fff;flex:none;transition:background .15s}
+.phone:hover .ic{background:var(--red)}
+.phone:hover{color:var(--red)}
 .facts{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:36px;padding-top:26px;border-top:1px solid var(--line)}
 .facts b{display:block;font:600 2.1rem/1 var(--serif);color:var(--green)}
 .facts span{font-size:.88rem;color:var(--muted)}
@@ -227,6 +232,7 @@ footer a{color:var(--ink-2)}
    <a href="#pitanja">Pitanja</a>
    <a href="#reference">Reference</a>
    <a href="#recenzije">Recenzije</a>
+   <a href="#kontakt">Kontakt</a>
    <a class="btn btn-red" href="#kontakt">Pošaljite tekst</a>
   </nav>
   <details class="mob"><summary>Meni</summary>
@@ -237,6 +243,7 @@ footer a{color:var(--ink-2)}
     <a href="#pitanja">Pitanja i odgovori</a>
     <a href="#reference">Reference</a>
     <a href="#recenzije">Recenzije</a>
+    <a href="#kontakt">Kontakt</a>
     <a class="btn btn-red" href="#kontakt">Pošaljite tekst</a>
    </nav>
   </details>
@@ -254,6 +261,7 @@ footer a{color:var(--ink-2)}
      <a class="btn btn-red" href="#kontakt">Besplatna probna lektura</a>
      <a class="btn btn-line" href="#cene">Cene od 1,99 €</a>
     </div>
+    <a class="phone" href="tel:+381653670320"><span class="ic" aria-hidden="true"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.6 10.8a15.2 15.2 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25 11.4 11.4 0 0 0 3.6.57 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.25.2 2.45.57 3.57a1 1 0 0 1-.25 1z"/></svg></span><span><small>Pozovite nas</small>+381 65 36 70 320</span></a>
     <div class="facts">
      <div><b>2016.</b><span>godina osnivanja</span></div>
      <div><b>1000+</b><span>zadovoljnih klijenata</span></div>
@@ -498,5 +506,6 @@ footer a{color:var(--ink-2)}
   <span>Deo prevodilačke agencije <a href="https://www.prevodioci.co.rs/" rel="noopener">Prevodioci Libra</a></span>
  </div>
 </footer>
+<script>document.querySelectorAll('.mob nav a').forEach(function(a){a.addEventListener('click',function(){a.closest('details').open=false})})</script>
 </body>
 </html>
