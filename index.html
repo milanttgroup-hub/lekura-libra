@@ -14,7 +14,11 @@
 <meta property="og:site_name" content="Lektura Libra">
 <meta property="og:title" content="Lektura i korektura teksta, cene od 1,99 € | Lektura Libra">
 <meta property="og:description" content="Neka svaka napisana reč odiše pismenošću. Lektura i korektura na 30 jezika, besplatna probna lektura 2 strane.">
-<meta property="og:image" content="img/og.jpg">
+<link rel="canonical" href="https://lektorilibra.rs/">
+<meta property="og:url" content="https://lektorilibra.rs/">
+<meta property="og:image" content="https://lektorilibra.rs/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="676">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="preload" as="image" href="img/ana-portret-800.webp" imagesrcset="img/ana-portret-480.webp 480w, img/ana-portret-800.webp 800w" imagesizes="(max-width: 880px) 80vw, 440px" fetchpriority="high">
 <style>
@@ -174,6 +178,10 @@ input,select,textarea{font:inherit;font-size:1rem;width:100%;padding:12px 14px;b
 input:focus,select:focus,textarea:focus{outline:0;border-color:var(--green);background:#fff}
 textarea{min-height:120px;resize:vertical}
 form .btn{grid-column:1/-1}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.opt{font-weight:400;color:var(--muted);font-size:.82rem}
+input[type=file]{padding:10px;background:#fff;border-style:dashed;cursor:pointer}
+input[type=file]::file-selector-button{font:600 .9rem var(--sans);border:0;border-radius:999px;background:var(--green);color:#fff;padding:.55em 1.1em;margin-right:12px;cursor:pointer}
 form .hint{grid-column:1/-1;font-size:.85rem;color:var(--muted);margin:0}
 @media (max-width:880px){.contact .wrap{grid-template-columns:1fr;gap:40px}}
 @media (max-width:520px){form{grid-template-columns:1fr;padding:24px}}
@@ -185,12 +193,12 @@ footer a{color:var(--ink-2)}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
-{"@type":"ProfessionalService","@id":"#lektura-libra","name":"Lektura Libra","description":"Lektura, korektura i redaktura tekstova na srpskom, engleskom i još 30 jezika.","telephone":"+381653670320","email":"prevodiocibg@gmail.com","foundingDate":"2016","areaServed":"RS","legalName":"Ana Todorović Radetić preduzetnik Prevodilačka agencija Prevodioci Libra Dimitrovgrad","taxID":"109642260","address":{"@type":"PostalAddress","streetAddress":"Balkanska 120","postalCode":"18320","addressLocality":"Dimitrovgrad","addressCountry":"RS"},"founder":{"@id":"#ana"},"priceRange":"1,99 € – 15 € po strani","image":"img/og.jpg","logo":"img/logo.svg",
+{"@type":"ProfessionalService","@id":"#lektura-libra","name":"Lektura Libra","description":"Lektura, korektura i redaktura tekstova na srpskom, engleskom i još 30 jezika.","telephone":"+381653670320","email":"prevodiocibg@gmail.com","foundingDate":"2016","areaServed":"RS","legalName":"Ana Todorović Radetić preduzetnik Prevodilačka agencija Prevodioci Libra Dimitrovgrad","taxID":"109642260","address":{"@type":"PostalAddress","streetAddress":"Balkanska 120","postalCode":"18320","addressLocality":"Dimitrovgrad","addressCountry":"RS"},"founder":{"@id":"#ana"},"priceRange":"1,99 € – 15 € po strani","url":"https://lektorilibra.rs/","image":"https://lektorilibra.rs/img/og.jpg","logo":"https://lektorilibra.rs/img/logo.svg",
 "hasOfferCatalog":{"@type":"OfferCatalog","name":"Lektura i korektura","itemListElement":[
 {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lektura i korektura na srpskom jeziku"},"priceSpecification":{"@type":"UnitPriceSpecification","minPrice":1.99,"maxPrice":7,"priceCurrency":"EUR","unitText":"prevodilačka strana (1.800 karaktera)"}},
 {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lektura i korektura na engleskom jeziku"},"priceSpecification":{"@type":"UnitPriceSpecification","minPrice":4.99,"maxPrice":9,"priceCurrency":"EUR","unitText":"prevodilačka strana (1.800 karaktera)"}},
 {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lektura na drugim stranim jezicima"},"priceSpecification":{"@type":"UnitPriceSpecification","minPrice":6,"maxPrice":15,"priceCurrency":"EUR","unitText":"prevodilačka strana (1.800 karaktera)"}}]}},
-{"@type":"Person","@id":"#ana","name":"Ana Todorović-Radetić","jobTitle":"Diplomirani filolog, lektor i prevodilac","alumniOf":"Filozofski fakultet u Nišu","image":"img/ana-portret-800.webp","worksFor":{"@id":"#lektura-libra"}},
+{"@type":"Person","@id":"#ana","name":"Ana Todorović-Radetić","jobTitle":"Diplomirani filolog, lektor i prevodilac","alumniOf":"Filozofski fakultet u Nišu","image":"https://lektorilibra.rs/img/ana-portret-800.webp","worksFor":{"@id":"#lektura-libra"}},
 {"@type":"FAQPage","mainEntity":[
 {"@type":"Question","name":"Šta obuhvata lektura i korektura teksta?","acceptedAnswer":{"@type":"Answer","text":"Tehničku uređenost teksta, ispravljanje grešaka u kucanju, poštovanje pravopisne norme, primenu gramatičkih pravila, sintaksu, leksiku i stil – kako bi finalni tekst bio pregledan, jasan i jezički korektan."}},
 {"@type":"Question","name":"Koja je razlika između lekture i korekture?","acceptedAnswer":{"@type":"Answer","text":"Lektor se dubinski bavi pravopisom, gramatikom, stilom i smislom teksta, dok korektor nakon lekture i prelamanja uklanja preostale slovne i tehničke omaške. Najčešće se rade kao objedinjena usluga."}},
@@ -458,7 +466,8 @@ footer a{color:var(--ink-2)}
      <li><small>Kancelarija</small><a href="#recenzije">Beograd, rad potpuno online</a></li>
     </ul>
    </div>
-   <form action="mailto:prevodiocibg@gmail.com" method="post" enctype="text/plain">
+   <form action="posalji.php" method="post" enctype="multipart/form-data">
+    <div class="hp" aria-hidden="true"><label for="website">Ne popunjavajte ovo polje</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
     <div class="fld"><label for="ime">Ime i prezime</label><input id="ime" name="ime" autocomplete="name" required></div>
     <div class="fld"><label for="email">Imejl</label><input id="email" name="email" type="email" autocomplete="email" required></div>
     <div class="fld"><label for="tel">Telefon</label><input id="tel" name="telefon" type="tel" autocomplete="tel"></div>
@@ -474,8 +483,9 @@ footer a{color:var(--ink-2)}
      </select></div>
     <div class="fld"><label for="jezik">Jezik teksta</label><input id="jezik" name="jezik" placeholder="npr. srpski"></div>
     <div class="fld"><label for="rok">Željeni rok</label><input id="rok" name="rok" placeholder="npr. za 3 dana"></div>
+    <div class="fld full"><label for="fajlovi">Priložite tekst za procenu <span class="opt">(nije obavezno)</span></label><input id="fajlovi" name="fajlovi[]" type="file" multiple accept=".doc,.docx,.pdf,.odt,.rtf,.txt,.ppt,.pptx,.xls,.xlsx,.jpg,.jpeg,.png,.zip"><small class="opt">Word, PDF, PowerPoint, Excel, slike ili ZIP · do 3 fajla, ukupno do 10 MB</small></div>
     <div class="fld full"><label for="poruka">Poruka</label><textarea id="poruka" name="poruka" placeholder="Obim teksta (broj strana ili karaktera) i sve što treba da znamo"></textarea></div>
-    <p class="hint">Sam tekst nam pošaljite kao prilog na prevodiocibg@gmail.com – procena je besplatna i ne obavezuje vas. Slanjem upita prihvatate <a href="politika-privatnosti/">Politiku privatnosti</a>.</p>
+    <p class="hint">Procena je besplatna i ne obavezuje vas. Veće fajlove pošaljite na <a href="mailto:prevodiocibg@gmail.com">prevodiocibg@gmail.com</a>. Slanjem upita prihvatate <a href="politika-privatnosti/">Politiku privatnosti</a>.</p>
     <button class="btn btn-red" type="submit">Zatražite ponudu</button>
    </form>
   </div>
