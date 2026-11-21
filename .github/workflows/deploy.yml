@@ -27,13 +27,13 @@ jobs:
         if: env.FTP_SERVER != ''
         run: |
           mkdir dist
-          cp -r index.html 404.html posalji.php robots.txt sitemap.xml .htaccess .user.ini img uslovi-koriscenja politika-privatnosti dist/
+          cp -r index.html 404.html posalji.php robots.txt sitemap.xml llms.txt llms-full.txt .htaccess .user.ini img uslovi-koriscenja politika-privatnosti en dist/
           # Na pravom domenu sajt je vidljiv Google-u (GitHub Pages pregled ostaje noindex)
-          for f in dist/index.html dist/uslovi-koriscenja/index.html dist/politika-privatnosti/index.html; do
+          for f in $(grep -rl 'noindex, nofollow' dist --include=index.html); do
             sed -i -e '/<!-- PREGLED/d' \
                    -e 's|<meta name="robots" content="noindex, nofollow">|<meta name="robots" content="index, follow, max-image-preview:large">|' "$f"
           done
-          grep -L 'noindex' dist/index.html dist/uslovi-koriscenja/index.html dist/politika-privatnosti/index.html
+          ! grep -rl 'noindex, nofollow' dist --include=index.html
           find dist -type f | sort
 
       - name: Slanje na hosting (FTP)

@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://lektorilibra.rs/</loc><lastmod>2026-11-20</lastmod></url>
-  <url><loc>https://lektorilibra.rs/uslovi-koriscenja/</loc><lastmod>2026-11-20</lastmod></url>
-  <url><loc>https://lektorilibra.rs/politika-privatnosti/</loc><lastmod>2026-11-20</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://lektorilibra.rs/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://lektorilibra.rs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lektorilibra.rs/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lektorilibra.rs/"/>
+  </url>
+  <url>
+    <loc>https://lektorilibra.rs/en/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://lektorilibra.rs/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lektorilibra.rs/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lektorilibra.rs/"/>
+  </url>
+  <url>
+    <loc>https://lektorilibra.rs/uslovi-koriscenja/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://lektorilibra.rs/uslovi-koriscenja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lektorilibra.rs/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lektorilibra.rs/uslovi-koriscenja/"/>
+  </url>
+  <url>
+    <loc>https://lektorilibra.rs/en/terms/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://lektorilibra.rs/uslovi-koriscenja/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lektorilibra.rs/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lektorilibra.rs/uslovi-koriscenja/"/>
+  </url>
+  <url>
+    <loc>https://lektorilibra.rs/politika-privatnosti/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://lektorilibra.rs/politika-privatnosti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lektorilibra.rs/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lektorilibra.rs/politika-privatnosti/"/>
+  </url>
+  <url>
+    <loc>https://lektorilibra.rs/en/privacy-policy/</loc>
+    <lastmod>2026-11-21</lastmod>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://lektorilibra.rs/politika-privatnosti/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://lektorilibra.rs/en/privacy-policy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://lektorilibra.rs/politika-privatnosti/"/>
+  </url>
 </urlset>
